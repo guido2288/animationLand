@@ -1,0 +1,350 @@
+body {
+  counter-reset: game;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+input:checked {
+  counter-increment: game;
+}
+.totalCount::after {
+  content: counter(game);
+}
+.phone {
+  background-color: #5aa1ee;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border: 8px solid black;
+  border-radius: 40px;
+  height: 600px;
+  width: 300px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+.title img {
+  width: 180px;
+  height: 26px;
+}
+
+.layer-1 {
+  position: absolute;
+  z-index: 1;
+  height: 450px;
+  width: 80px;
+  bottom: 0;
+  right: 60px;
+
+  animation-name: layer;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes layer {
+  0% {
+    height: 450px;
+  }
+
+  50% {
+    height: 430px;
+  }
+
+  100% {
+    height: 400px;
+  }
+}
+
+.layer-2 {
+  position: absolute;
+  z-index: 2;
+  height: 450px;
+  width: 80px;
+  bottom: 0;
+  left: 60px;
+
+  animation-name: layer;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.layer-3 {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 220px;
+  height: 400px;
+  background-color: #8f563b;
+  border: solid 1px black;
+  border-radius: 5px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+.top {
+  position: absolute;
+  left: 0;
+  top: -35px;
+  width: 100%;
+  height: 46px;
+  background-image: url("./Images/tile108.png");
+}
+
+.layer-4 {
+  position: absolute;
+  z-index: 4;
+  height: 300px;
+  width: 80px;
+  bottom: 0;
+  left: 30px;
+
+  animation-name: layer2;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes layer2 {
+  0% {
+    bottom: 0px;
+  }
+
+  50% {
+    bottom: -15px;
+  }
+
+  100% {
+    bottom: -30px;
+  }
+}
+
+.tree {
+  position: absolute;
+  z-index: 10;
+  width: 110px;
+  height: 110px;
+  bottom: 242px;
+  left: 140px;
+  background-image: url("./Images/pointer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.layer-5 {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  bottom: 0;
+  width: 220px;
+  height: 250px;
+  background-color: #8f563b;
+  border: solid 1px black;
+  border-radius: 5px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+.layer-6 {
+  position: absolute;
+  z-index: 6;
+  height: 150px;
+  width: 80px;
+  bottom: 0;
+  right: 40px;
+
+  animation-name: layer3;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes layer3 {
+  0% {
+    height: 150px;
+  }
+
+  50% {
+    height: 125px;
+  }
+
+  100% {
+    height: 100px;
+  }
+}
+
+.layer-7 {
+  position: absolute;
+  z-index: 7;
+  right: 0;
+  bottom: 0;
+  width: 180px;
+  height: 100px;
+  background-color: #8f563b;
+  border: solid 1px black;
+  border-radius: 5px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+.layer-8 {
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  z-index: 8;
+  width: 90px;
+  height: 80px;
+  background-image: url("./Images/rocks2_3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.layer-9 {
+  position: absolute;
+  z-index: 9;
+  bottom: -9px;
+  left: 110px;
+  width: 150px;
+  height: 81px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./Images/rocks2_1.png");
+}
+.layer-10 {
+  position: absolute;
+  z-index: 10;
+  bottom: -17px;
+  right: -7px;
+  width: 90px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./Images/rocks2_2.png");
+}
+.layer-11 {
+  position: absolute;
+  z-index: 10;
+  bottom: -17px;
+  right: 144px;
+  width: 90px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./Images/rocks2_2.png");
+}
+
+.layer-12 {
+  position: absolute;
+  z-index: 2;
+  width: 39px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./Images/tile54.png");
+  bottom: 252px;
+}
+
+.layer-13 {
+  position: absolute;
+  z-index: 2;
+  width: 39px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./Images/tile54.png");
+  bottom: 100px;
+  right: 0;
+}
+
+/* Personaje */
+
+.left-ear--outer {
+  background-color: white;
+  border-radius: 90%;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+}
+
+.left-ear--inner {
+  background-color: pink;
+  border-radius: 80%;
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  left: 15px;
+  top: 8px;
+}
+
+.right-ear--outer {
+  background-color: white;
+  border-radius: 90%;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  right: 10px;
+}
+
+.right-ear--inner {
+  background-color: pink;
+  border-radius: 80%;
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+}
+
+.head {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 50px;
+  top: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.head__eye {
+  background-color: black;
+  border-radius: 50%;
+  width: 4px;
+  height: 15px;
+  position: absolute;
+  top: 15px;
+
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {
+    height: 4px;
+  }
+  5% {
+    transform: translate(0px, 2px);
+    height: 1px;
+  }
+  10% {
+    transform: translate(0px, 0px);
+    height: 4px;
+  }
+}
+
+.head__eye--left {
+  left: 20px;
+}
+
+.head__eye--right {
+  left: 40px;
+}
